@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneInformationActivity">
+
+
+    <TextView
+        android:id="@+id/phNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:hint="Phone Number"
+        android:inputType="textMultiLine"
+        android:textColorHint="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/editText_infos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="textMultiLine"
+        android:textColorHint="@color/black"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/phNo"
+        app:layout_constraintTop_toTopOf="@+id/phNo" />
+
+
+    <TextView
+        android:id="@+id/simoprator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Sim Oprater"
+        android:inputType="textMultiLine"
+        android:textColorHint="@color/black"
+        android:textSize="22dp"
+        android:layout_marginStart="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phNo" />
+
+
+    <TextView
+        android:id="@+id/txtSimOprater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Sim Oprater"
+        android:inputType="textMultiLine"
+        android:textColorHint="@color/black"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="@+id/editText_infos"
+        app:layout_constraintTop_toBottomOf="@+id/editText_infos" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn"
+        android:text="Next location"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSimOprater" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
